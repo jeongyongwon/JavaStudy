@@ -1,4 +1,4 @@
-package functionalinterface.methodreference;
+package functionalpackage.methodreference;
 
 import java.util.Arrays;
 import java.util.function.UnaryOperator;

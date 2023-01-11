@@ -1,6 +1,6 @@
 package stream;
 
-import domain.OnlineClass;
+import optional.domain.OnlineClass;
 
 import java.util.ArrayList;
 import java.util.Collection;

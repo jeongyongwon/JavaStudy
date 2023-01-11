@@ -1,4 +1,4 @@
-package com.example.java8to11.함수형패키지.함수형인터페이스;
+package functionalpackage.functionalinterface;
 @FunctionalInterface
 public interface RunSomething {
 

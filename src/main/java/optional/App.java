@@ -1,9 +1,8 @@
 package optional;
 
-import domain.OnlineClass;
-import domain.Progress;
+import optional.domain.OnlineClass;
+import optional.domain.Progress;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

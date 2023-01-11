@@ -1,4 +1,4 @@
-package functionalinterface.methodreference;
+package functionalpackage.methodreference;
 
 public class Greeting {
 
