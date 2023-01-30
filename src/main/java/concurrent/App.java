@@ -159,6 +159,10 @@ public class App {
 
         //동시에 실행할 수도 있다;
         //다 기다림 젤 늦은 시간을 기다리기 때문에 3초간 걸리는 듯
+
+        /*
+        써보자
+        * */
         List<Future<String>> futures = executorService.invokeAll(Arrays.asList(hello,java, yongwon));
         for (Future<String> future : futures) {
             System.out.println(future.get());
