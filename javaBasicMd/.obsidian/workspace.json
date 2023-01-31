@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "7a7ccf8fb659a078",
+    "type": "split",
+    "children": [
+      {
+        "id": "530c123f59a333d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a997a21f2cb66b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "11_12.객체생성.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "62c07675b63b65c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "13.private 생성자.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "847b13884e43bb09",
+    "type": "split",
+    "children": [
+      {
+        "id": "da8d8b6adb974813",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d4d9f94a0a55a892",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "23f9e40b7bee3837",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eadcd1cf6ea8504f",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d28860a65deb7be6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9d3ec07ee6c3982f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62d51386e2d7f82b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "13.private 생성자.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d59b2401b7cf4691",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "13.private 생성자.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6b03928fc7872d0b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "450aba9744206c5d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "13.private 생성자.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "62c07675b63b65c4",
+  "lastOpenFiles": [
+    "11_12.객체생성.md",
+    "13.private 생성자.md",
+    "10. 기본자료형_사용자정의자료형.md"
+  ]
+}
