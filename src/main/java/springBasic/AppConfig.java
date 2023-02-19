@@ -1,6 +1,8 @@
 package springBasic;
 
+import springBasic.discount.DiscountPolicy;
 import springBasic.discount.FixDiscountPolicy;
+import springBasic.member.MemberRepository;
 import springBasic.member.MemberService;
 import springBasic.member.MemberServiceImpl;
 import springBasic.member.MemoryMemberRepository;
@@ -16,7 +18,18 @@ public class AppConfig {
 
     public OrderService orderService() {
         return new OrderServiceImpl(
-                new MemoryMemberRepository(),
-                new FixDiscountPolicy());
+                memberRepository(),
+                discountPolicy());
     }
+
+    /*
+    * 역할, 구현을 더욱더 분리하게 되었다. 이제는 변경 시 아래의 코드만 수정하면 된다
+    * */
+    public MemberRepository memberRepository() {
+        return new MemoryMemberRepository();
+    }
+    public DiscountPolicy discountPolicy() {
+        return new FixDiscountPolicy();
+    }
+
 }
