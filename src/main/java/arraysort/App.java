@@ -19,5 +19,15 @@ public class App {
         start = System.nanoTime();
         Arrays.parallelSort(numbers); //자원에 따라 다르지만 대부분 빠름
         System.out.println("parallel sorting took  " + (System.nanoTime() - start));
+
+        /*
+            binary search
+            정렬이 되어있을 때만 가능함함
+       * */
+        int[] array = {5,3,4,1,2};
+        Arrays.sort(array);
+
+        int  i = Arrays.binarySearch(array,4);
+        System.out.println(i);
     }
 }
