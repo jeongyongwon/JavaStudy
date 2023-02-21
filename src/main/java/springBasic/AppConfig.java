@@ -9,6 +9,7 @@ import springBasic.member.MemoryMemberRepository;
 import springBasic.order.OrderService;
 import springBasic.order.OrderServiceImpl;
 import org.springframework.context.annotation.*;
+import springBasic.singleton.StatefulService;
 
 @Configuration
 public class AppConfig {
@@ -29,5 +30,10 @@ public class AppConfig {
     @Bean
     public DiscountPolicy discountPolicy() {
         return new RateDiscountPolicy();
+    }
+
+    @Bean
+    public StatefulService statefulService() {
+        return new StatefulService();
     }
 }
