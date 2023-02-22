@@ -1,5 +1,7 @@
 package springBasic.order;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import springBasic.discount.DiscountPolicy;
 import springBasic.discount.FixDiscountPolicy;
 import springBasic.discount.RateDiscountPolicy;
@@ -7,6 +9,7 @@ import springBasic.member.Member;
 import springBasic.member.MemberRepository;
 import springBasic.member.MemoryMemberRepository;
 
+@Component
 public class OrderServiceImpl implements OrderService {
 
 
@@ -21,6 +24,7 @@ public class OrderServiceImpl implements OrderService {
     private final DiscountPolicy discountPolicy;
 
     //OrderServiceImpl 입장에서는 어떤 구현체가 들어오는지 모른다 => DIP 원칙 지킴
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
