@@ -2,13 +2,15 @@ package springBasic.order;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import springBasic.annotation.MainDiscountPolicy;
 import springBasic.discount.DiscountPolicy;
 import springBasic.member.Member;
 import springBasic.member.MemberRepository;
 
 @Component
-@RequiredArgsConstructor
+@RequiredArgsConstructor //Autowired도 필요없게 만들어준다.
 public class OrderServiceImpl implements OrderService {
 
 
@@ -21,6 +23,12 @@ public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
+
+//    @Autowired
+//    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy= discountPolicy;
+//    }
 
     //OrderServiceImpl 입장에서는 어떤 구현체가 들어오는지 모른다 => DIP 원칙 지킴
     /*
