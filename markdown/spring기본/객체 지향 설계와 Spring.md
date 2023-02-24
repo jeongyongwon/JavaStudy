@@ -340,3 +340,61 @@ public class OrderServiceImpl implements OrderService {
 
 
 
+### 조회하는 Bean이 2개 이상일 때
+
+#### @Autowired 필드 명
+
+> 만약에 Bean이 동일한 타입이 있을 경우, 필드명으로 매칭해서 가져온다.
+
+```java
+@Autowired
+private DiscountPolicy discountPolicy //여러 할인 정책이 있을 수 있으니
+    
+@Autowired
+private DiscountPolicy rateDiscountPolicy //필드 명으로 가줘올 수 있다.
+```
+
+
+
+#### @Qualifier 로 명칭
+
+> **@Qualifier끼리 최대한 매칭하도록 사용하자**
+
+```java
+@Component
+@Qualifier("mainDiscountPolicy")
+public class RateDiscountPolicy implements DiscountPolicy {}
+
+....
+    
+@Component
+@Qualifier("fixDiscountPolicy")
+public class FixDiscountPolicy implements DiscountPolicy {}
+```
+
+##### 생성자 주입 예시
+
+```java
+@Autowired
+public OrderServiceImpl(MemberRepository memberRepository, 
+        @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
+     this.memberRepository = memberRepository;
+     this.discountPolicy = discountPolicy;
+}
+```
+
+
+
+#### @Primary로 우선순위 지정
+
+```java
+@Component
+@Primary
+public class RateDiscountPolicy implements DiscountPolicy {}
+
+...
+    
+@Component
+public class FixDiscountPolicy implements DiscountPolicy {}
+```
+
