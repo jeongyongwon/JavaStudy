@@ -1,4 +1,4 @@
-package concurrent.basic;
+package concurrent.runnable;
 
 public class BasicRunnablehread {
     public static void main(String[] args) {

@@ -1,11 +1,13 @@
 package functionalpackage.functionalinterface;
 
+import java.util.Arrays;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 public class Foo {
+
     public static void main(String[] args) {
 
         //java 8부터 나오는 람다로 인터페이스 오버라이드하는 거 동일함
@@ -60,10 +62,14 @@ public class Foo {
 
         //인자를 여러개 받을 때
         //이미 변수 선언부에 argument type을 선언하기 때문에 굳이 a,b 타입을 선언할 필요는 없음
-        BinaryOperator<Integer> sum = (a, b) -> {
+        BinaryOperator<Integer> sum2 = (a, b) -> {
             return a + b;
         };
 
+        Integer a = sum2.apply(10,15);
+        System.out.println("a = " + a);
+
 
     }
+
 }

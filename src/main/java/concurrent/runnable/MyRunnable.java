@@ -1,4 +1,4 @@
-package concurrent.basic;
+package concurrent.runnable;
 
 public class MyRunnable implements Runnable{
 
